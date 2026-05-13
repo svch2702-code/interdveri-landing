@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ИнтерДвери — входные и межкомнатные двери с установкой | Москва</title>
+<meta name="description" content="Входные и межкомнатные двери с установкой за 1 день. 800+ моделей в наличии. Бесплатный замер. Фиксированная цена в договоре. Гарантия 5 лет.">
+<meta property="og:title" content="ИнтерДвери — двери с установкой">
+<meta property="og:description" content="800+ моделей. Установка за 1 день. Бесплатный замер.">
+<link rel="canonical" href="https://interdveri.vercel.app/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚪</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://interdveri.vercel.app/">
+<meta property="og:image" content="https://interdveri.vercel.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ИнтерДвери — двери с установкой">
+<meta name="twitter:description" content="800+ моделей. Установка за 1 день. Бесплатный замер.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"ИнтерДвери","description":"Продажа и установка входных и межкомнатных дверей","telephone":"+7-999-123-45-67","address":{"@type":"PostalAddress","addressLocality":"Москва"},"openingHours":["Mo-Sa 09:00-20:00","Su 10:00-18:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"847"}}
+</script>
+<style>
+:root {
+  --cream:  #F5F0E8;
+  --walnut: #3A2E2B;
+  --brass:  #A4863D;
+  --brass-dark: #8A7030;
+  --text:   #2C2420;
+  --linen:  #EDE5D8;
+  --muted:  #B8AD9D;
+  --dark:   #1A1410;
+  --green:  #25D366;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(58,46,43,0.10);
+  --shadow-lg: 0 12px 48px rgba(58,46,43,0.16);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;font-size:clamp(0.9rem,1.2vw,1.05rem);line-height:1.65;color:var(--text);background:var(--cream);overflow-x:hidden}
+
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;color:var(--walnut);line-height:1.1;letter-spacing:-0.01em}
+h2{font-size:clamp(2rem,4vw,3.5rem)}
+h3{font-size:clamp(1.2rem,2vw,1.6rem)}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button,input,select,textarea{font-family:inherit;font-size:inherit}
+
+/* ── UTILITIES ── */
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.section{padding:80px 0}
+.section--linen{background:var(--linen)}
+.section--dark{background:var(--dark);color:#F5F0E8}
+.section-label{font-family:'Inter',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--brass);margin-bottom:12px}
+.section-title{margin-bottom:16px}
+.section-subtitle{color:var(--muted);max-width:560px;margin-bottom:48px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:16px 32px;border-radius:8px;font-weight:600;font-size:1rem;cursor:pointer;border:none;transition:transform 0.3s ease,box-shadow 0.3s ease,background 0.2s ease;min-height:56px;white-space:nowrap}
+.btn-primary{background:var(--brass);color:#fff}
+.btn-primary:hover{background:var(--brass-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(164,134,61,0.35)}
+.btn-outline{background:transparent;color:var(--walnut);border:2px solid var(--walnut)}
+.btn-outline:hover{background:var(--walnut);color:#fff}
+.btn-outline-light{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.5)}
+.btn-outline-light:hover{background:rgba(255,255,255,0.1)}
+
+/* ── CURTAIN LOADER ── */
+#loader{position:fixed;inset:0;z-index:9999;display:flex;pointer-events:none}
+.curtain-panel{flex:1;background:var(--walnut);transform-origin:top;transition:transform 1.2s cubic-bezier(0.76,0,0.24,1)}
+.curtain-panel.hide{transform:scaleY(0)}
+#loader-logo{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10000;font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:#F5F0E8;font-style:italic;opacity:0;transition:opacity 0.4s ease}
+#loader-logo.show{opacity:1}
+#loader-logo.hide{opacity:0}
+
+/* ── HEADER ── */
+.header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(245,240,232,0.72);backdrop-filter:blur(16px) saturate(180%);border-bottom:1px solid rgba(164,134,61,0.15);transition:background 0.3s ease,box-shadow 0.3s ease}
+.header.scrolled{background:rgba(245,240,232,0.97);box-shadow:0 2px 20px rgba(0,0,0,0.08)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--walnut);letter-spacing:-0.01em}
+.logo span{color:var(--brass)}
+.nav{display:flex;align-items:center;gap:32px}
+.nav a{font-size:0.875rem;font-weight:500;color:var(--walnut);opacity:0.8;transition:opacity 0.2s}
+.nav a:hover{opacity:1}
+.header-contacts{display:flex;align-items:center;gap:16px}
+.header-phone{font-weight:600;color:var(--walnut);font-size:0.95rem}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.burger span{display:block;width:24px;height:2px;background:var(--walnut);transition:transform 0.3s,opacity 0.3s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;inset:0;top:72px;background:var(--cream);padding:32px 24px;flex-direction:column;gap:24px;z-index:99}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-size:1.5rem;font-family:'Cormorant Garamond',serif;color:var(--walnut)}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;position:relative;overflow:hidden;background:var(--cream)}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,#D4C4A0 0%,transparent 55%),radial-gradient(ellipse at 80% 20%,#F5F0E8 0%,transparent 50%),radial-gradient(ellipse at 60% 80%,#C4B090 0%,transparent 50%);z-index:0}
+.hero-bg-img{position:absolute;right:0;top:0;width:52%;height:100%;object-fit:cover;object-position:center;z-index:1;opacity:0.85}
+.hero-grain{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:0.07;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-size:200px}
+.hero-content{position:relative;z-index:3;display:grid;grid-template-columns:1fr 420px;gap:64px;align-items:center;width:100%}
+.hero-title{font-size:clamp(2.8rem,6vw,5.5rem);font-style:italic;line-height:1.0;margin-bottom:20px;color:var(--walnut)}
+.hero-subtitle{font-size:1.1rem;color:var(--text);opacity:0.8;margin-bottom:40px;max-width:500px;line-height:1.7}
+
+.hero-form-card{background:#fff;border-radius:16px;padding:32px;box-shadow:var(--shadow-lg)}
+.form-title{font-size:1.1rem;font-weight:600;margin-bottom:20px;color:var(--walnut)}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted);margin-bottom:6px}
+.form-group input{width:100%;padding:14px 16px;border:2px solid var(--linen);border-radius:8px;font-size:1rem;color:var(--text);background:var(--cream);transition:border-color 0.2s}
+.form-group input:focus{outline:none;border-color:var(--brass)}
+.form-group input.valid{border-color:#4CAF50}
+.form-group input.error{border-color:#e53935}
+.form-microcopy{font-size:0.78rem;color:var(--muted);margin-top:12px;text-align:center;line-height:1.5}
+
+.trust-bar{display:flex;flex-wrap:wrap;gap:16px;margin-top:40px}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:0.82rem;font-weight:500;color:var(--walnut)}
+.trust-icon{font-size:1.1rem}
+
+/* ── MARQUEE ── */
+.marquee-wrap{padding:20px 0;background:var(--linen);overflow:hidden;border-top:1px solid rgba(164,134,61,0.2);border-bottom:1px solid rgba(164,134,61,0.2)}
+.marquee-track{display:flex;gap:0;animation:marquee 28s linear infinite;width:max-content}
+.marquee-track span{font-family:'Inter',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--brass);padding:0 32px;white-space:nowrap}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── PAIN ── */
+.pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-bottom:40px}
+.pain-card{background:#fff;border-radius:var(--radius);padding:28px;border-left:3px solid var(--brass);box-shadow:var(--shadow)}
+.pain-card-icon{font-size:1.8rem;margin-bottom:12px}
+.pain-card p{color:var(--text);font-style:italic;line-height:1.6}
+.pain-resolution{background:var(--walnut);color:#F5F0E8;border-radius:var(--radius);padding:32px;text-align:center;margin-bottom:32px}
+.pain-resolution p{font-size:1.1rem;line-height:1.8;margin-bottom:20px}
+
+/* ── CATALOG ── */
+.tabs{display:flex;gap:4px;background:var(--linen);border-radius:10px;padding:4px;margin-bottom:40px;width:fit-content}
+.tab-btn{padding:10px 24px;border-radius:8px;border:none;background:transparent;font-weight:500;cursor:pointer;transition:background 0.2s,color 0.2s;color:var(--muted)}
+.tab-btn.active{background:#fff;color:var(--walnut);box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+.tab-panel{display:none}
+.tab-panel.active{display:block}
+.catalog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.product-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94),box-shadow 0.35s ease;cursor:pointer}
+.product-card:hover{transform:translateY(-6px) scale(1.015);box-shadow:0 20px 60px rgba(58,46,43,0.15)}
+.product-img{position:relative;height:220px;overflow:hidden;background:var(--linen)}
+.product-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease}
+.product-card:hover .product-img img{transform:scale(1.06)}
+.product-badge{position:absolute;top:12px;left:12px;background:var(--brass);color:#fff;font-size:0.7rem;font-weight:600;padding:4px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:0.05em}
+.product-body{padding:20px}
+.product-name{font-size:1rem;font-weight:600;color:var(--walnut);margin-bottom:6px}
+.product-specs{font-size:0.8rem;color:var(--muted);margin-bottom:12px;line-height:1.6}
+.product-price{font-size:1.25rem;font-weight:700;color:var(--brass);margin-bottom:16px}
+.product-btns{display:flex;gap:8px}
+.product-btns .btn{flex:1;padding:10px 12px;font-size:0.8rem;min-height:40px}
+.catalog-footer{text-align:center;margin-top:40px}
+.catalog-footer p{color:var(--muted);margin-top:16px}
+
+/* ── BENEFITS ── */
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:56px;text-align:center}
+.stat-item{background:#fff;border-radius:var(--radius);padding:28px 16px;box-shadow:var(--shadow)}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,3.2rem);font-weight:300;color:var(--brass);line-height:1}
+.stat-label{font-size:0.8rem;color:var(--muted);margin-top:6px;font-weight:500}
+
+.bento{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto;gap:20px}
+.bento-card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);transition:transform 0.3s,box-shadow 0.3s}
+.bento-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.bento-card.wide{grid-column:span 2}
+.bento-icon{font-size:2rem;margin-bottom:16px}
+.bento-card h3{font-size:1.1rem;margin-bottom:10px;font-weight:600}
+.bento-card p{font-size:0.875rem;color:var(--muted);line-height:1.7}
+.bento-gost{background:var(--walnut);color:#F5F0E8;border-radius:var(--radius);padding:24px;margin-top:20px;text-align:center;font-size:0.875rem;opacity:0.9}
+
+/* ── HOW WE WORK ── */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;margin-bottom:40px}
+.steps::before{content:'';position:absolute;top:40px;left:10%;right:10%;height:2px;background:linear-gradient(90deg,var(--brass),var(--brass-dark));z-index:0}
+.step{text-align:center;position:relative;z-index:1;padding:0 16px}
+.step-num{width:80px;height:80px;border-radius:50%;background:var(--brass);color:#fff;font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+.step h3{font-size:1rem;font-weight:600;margin-bottom:10px;color:var(--walnut)}
+.step p{font-size:0.82rem;color:var(--muted);line-height:1.7}
+.step-note{text-align:center;background:var(--linen);border-radius:var(--radius);padding:20px;font-style:italic;color:var(--walnut);margin-bottom:32px}
+
+/* ── REVIEWS ── */
+.rating-block{display:flex;align-items:center;gap:24px;background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);margin-bottom:40px;width:fit-content}
+.rating-stars{font-size:1.8rem}
+.rating-score{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:var(--walnut);line-height:1}
+.rating-info p{font-size:0.85rem;color:var(--muted)}
+.rating-link{color:var(--brass);font-size:0.85rem;font-weight:500}
+
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:48px}
+.review-card{background:#fff;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.review-header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.review-avatar{width:48px;height:48px;border-radius:50%;background:var(--linen);display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:600;color:var(--walnut);flex-shrink:0}
+.review-meta h4{font-size:0.9rem;font-weight:600;color:var(--walnut)}
+.review-meta p{font-size:0.75rem;color:var(--muted)}
+.review-stars{color:var(--brass);font-size:0.9rem;margin-bottom:8px}
+.review-text{font-size:0.875rem;line-height:1.7;color:var(--text)}
+.review-source{font-size:0.75rem;color:var(--muted);margin-top:10px;font-style:italic}
+
+.certs{display:flex;flex-wrap:wrap;gap:16px}
+.cert-card{background:#fff;border:2px solid var(--linen);border-radius:var(--radius);padding:20px 24px;display:flex;align-items:center;gap:12px}
+.cert-icon{font-size:1.5rem}
+.cert-card h4{font-size:0.85rem;font-weight:600;color:var(--walnut)}
+.cert-card p{font-size:0.75rem;color:var(--muted)}
+
+/* ── PROMO ── */
+.promo{background:var(--walnut);padding:80px 0;position:relative;overflow:hidden}
+.promo::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(164,134,61,0.2) 0%,transparent 60%)}
+.promo-inner{display:grid;grid-template-columns:1fr 420px;gap:64px;align-items:center}
+.promo h2{color:#F5F0E8;font-size:clamp(2rem,4vw,3rem)}
+.promo-sub{color:rgba(245,240,232,0.75);font-size:1.05rem;margin:16px 0 32px;line-height:1.7}
+.timer{display:flex;gap:16px;margin-bottom:32px}
+.timer-block{text-align:center;background:rgba(255,255,255,0.08);border-radius:10px;padding:16px 20px;min-width:70px}
+.timer-num{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:300;color:#F5F0E8;line-height:1}
+.timer-label{font-size:0.65rem;color:rgba(245,240,232,0.55);text-transform:uppercase;letter-spacing:0.1em;margin-top:4px}
+.timer-sep{font-size:2rem;color:var(--brass);align-self:center;padding-top:4px}
+.promo-form{background:rgba(255,255,255,0.06);border:1px solid rgba(245,240,232,0.15);border-radius:16px;padding:32px}
+.promo-form .form-group label{color:rgba(245,240,232,0.6)}
+.promo-form .form-group input{background:rgba(255,255,255,0.08);border-color:rgba(245,240,232,0.2);color:#F5F0E8}
+.promo-form .form-group input::placeholder{color:rgba(245,240,232,0.4)}
+.promo-form .form-group input:focus{border-color:var(--brass)}
+.promo-form .form-microcopy{color:rgba(245,240,232,0.45)}
+
+/* ── FAQ ── */
+.faq-list{max-width:800px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--linen)}
+.faq-question{width:100%;background:none;border:none;text-align:left;padding:22px 0;font-size:1rem;font-weight:500;color:var(--walnut);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:color 0.2s}
+.faq-question:hover{color:var(--brass)}
+.faq-icon{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--linen);display:flex;align-items:center;justify-content:center;font-size:1.1rem;transition:transform 0.3s,background 0.2s;color:var(--brass)}
+.faq-item.open .faq-icon{transform:rotate(45deg);background:var(--brass);color:#fff}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s ease}
+.faq-answer.open{max-height:400px;padding-bottom:20px}
+.faq-answer p{color:var(--muted);line-height:1.8;font-size:0.9rem}
+
+/* ── FINAL CTA ── */
+.final-cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.multistep-form{background:#fff;border-radius:16px;padding:36px;box-shadow:var(--shadow-lg)}
+.step-indicator{display:flex;gap:8px;margin-bottom:24px}
+.step-dot{width:8px;height:8px;border-radius:50%;background:var(--linen)}
+.step-dot.active{background:var(--brass);width:24px;border-radius:4px}
+.door-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:24px}
+.door-option{padding:12px;border:2px solid var(--linen);border-radius:10px;text-align:center;cursor:pointer;font-size:0.85rem;font-weight:500;color:var(--walnut);transition:all 0.2s;background:#fff}
+.door-option:hover,.door-option.selected{border-color:var(--brass);background:rgba(164,134,61,0.06);color:var(--brass)}
+.door-option-icon{font-size:1.4rem;margin-bottom:6px}
+.ms-step{display:none}
+.ms-step.active{display:block}
+.success-msg{display:none;text-align:center;padding:20px}
+.success-msg.show{display:block}
+.manager-block{display:flex;align-items:center;gap:16px;background:var(--linen);border-radius:12px;padding:16px;margin-top:20px}
+.manager-avatar{width:56px;height:56px;border-radius:50%;background:var(--walnut);display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+.manager-info h4{font-size:0.9rem;font-weight:600}
+.manager-info p{font-size:0.8rem;color:var(--muted)}
+
+.contacts-block{display:flex;flex-direction:column;gap:24px}
+.contact-item{display:flex;align-items:center;gap:14px}
+.contact-icon{width:48px;height:48px;border-radius:12px;background:var(--linen);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+.contact-info span{font-size:0.75rem;color:var(--muted);display:block}
+.contact-info a, .contact-info strong{font-weight:600;color:var(--walnut);font-size:0.95rem}
+.map-placeholder{border-radius:var(--radius);overflow:hidden;height:200px;background:var(--linen);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:0.9rem;border:2px dashed rgba(164,134,61,0.3);margin-top:24px}
+.hours{display:flex;gap:16px;margin-top:16px;flex-wrap:wrap}
+.hours span{font-size:0.8rem;color:var(--muted)}
+
+/* ── FOOTER ── */
+footer{background:var(--dark);color:rgba(245,240,232,0.6);padding:48px 0 24px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#F5F0E8;margin-bottom:12px}
+.footer-legal{font-size:0.78rem;line-height:1.8;opacity:0.6}
+.footer-nav h4{font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(245,240,232,0.4);margin-bottom:16px}
+.footer-nav a{display:block;font-size:0.85rem;margin-bottom:8px;color:rgba(245,240,232,0.6);transition:color 0.2s}
+.footer-nav a:hover{color:#F5F0E8}
+.footer-bottom{border-top:1px solid rgba(245,240,232,0.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;opacity:0.4}
+
+/* ── MOBILE STICKY BAR ── */
+.mobile-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:200;height:60px}
+.mobile-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:0.9rem;color:#fff}
+.mobile-bar-call{background:var(--brass)}
+.mobile-bar-wa{background:var(--green)}
+
+/* ── SCROLL ANIMATIONS ── */
+.fade-up{opacity:0;transform:translateY(40px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+.fade-left{opacity:0;transform:translateX(-40px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-left.visible{opacity:1;transform:translateX(0)}
+
+/* ── PLACEHOLDER IMAGES ── */
+.img-placeholder{background:linear-gradient(135deg,var(--linen) 0%,#D4C4A0 100%);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:0.8rem;width:100%;height:100%}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .hero-content{grid-template-columns:1fr;gap:40px}
+  .hero-bg-img{width:100%;opacity:0.15;z-index:0}
+  .catalog-grid{grid-template-columns:repeat(2,1fr)}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .bento-card.wide{grid-column:span 2}
+  .steps{grid-template-columns:repeat(2,1fr);gap:32px}
+  .steps::before{display:none}
+  .reviews-grid{grid-template-columns:repeat(2,1fr)}
+  .promo-inner{grid-template-columns:1fr}
+  .final-cta-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nav,.header-contacts .btn{display:none}
+  .burger{display:flex}
+  .header-phone{font-size:0.85rem}
+  .hero-content{grid-template-columns:1fr}
+  .catalog-grid{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .bento{grid-template-columns:1fr}
+  .bento-card.wide{grid-column:span 1}
+  .steps{grid-template-columns:1fr}
+  .reviews-grid{grid-template-columns:1fr}
+  .mobile-bar{display:flex}
+  body{padding-bottom:60px}
+  .footer-grid{grid-template-columns:1fr}
+  .door-options{grid-template-columns:1fr}
+  .timer{flex-wrap:wrap;justify-content:center}
+  .promo-inner{grid-template-columns:1fr}
+  .final-cta-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:0.01ms !important;transition-duration:0.01ms !important}
+}
+
+/* ── iOS Safari backdrop-filter fix ── */
+.header{-webkit-backdrop-filter:blur(16px) saturate(180%)}
+.modal-overlay{-webkit-backdrop-filter:blur(8px)}
+
+/* ── BACK TO TOP ── */
+#back-to-top{position:fixed;bottom:88px;right:20px;width:48px;height:48px;border-radius:50%;background:var(--brass);color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.3rem;box-shadow:0 4px 20px rgba(164,134,61,0.45);opacity:0;transform:translateY(16px) scale(0.8);transition:opacity 0.35s ease,transform 0.35s cubic-bezier(0.16,1,0.3,1),background 0.2s;z-index:150;pointer-events:none;line-height:1}
+#back-to-top.show{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
+#back-to-top:hover{background:var(--brass-dark);transform:translateY(-3px) scale(1.08) !important;box-shadow:0 8px 28px rgba(164,134,61,0.5)}
+@media(min-width:769px){#back-to-top{bottom:36px;right:28px}}
+@media(max-width:768px){#back-to-top{bottom:76px}}
+
+/* ── CONTACT FLOAT BUTTON ── */
+#openContactModal{position:fixed;bottom:88px;left:20px;padding:11px 18px;background:var(--walnut);color:#F5F0E8;border-radius:40px;font-size:0.82rem;font-weight:600;cursor:pointer;box-shadow:0 4px 20px rgba(26,20,16,0.28);transition:transform 0.3s ease,box-shadow 0.3s ease,opacity 0.35s ease;border:none;z-index:150;opacity:0;pointer-events:none;display:flex;align-items:center;gap:6px;white-space:nowrap}
+#openContactModal.show{opacity:1;pointer-events:auto}
+#openContactModal:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(26,20,16,0.35)}
+@media(min-width:769px){#openContactModal{bottom:36px;left:28px}}
+@media(max-width:768px){#openContactModal{bottom:76px}}
+
+/* ── CONTACT MODAL ── */
+.modal-overlay{position:fixed;inset:0;background:rgba(26,20,16,0.68);backdrop-filter:blur(8px);z-index:500;opacity:0;pointer-events:none;transition:opacity 0.35s ease;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal-overlay.open{opacity:1;pointer-events:auto}
+.modal-box{background:#fff;border-radius:20px;padding:40px;width:100%;max-width:500px;box-shadow:0 32px 80px rgba(26,20,16,0.28);transform:translateY(36px) scale(0.95);transition:transform 0.42s cubic-bezier(0.16,1,0.3,1),opacity 0.35s ease;opacity:0;position:relative;max-height:90vh;overflow-y:auto}
+.modal-overlay.open .modal-box{transform:translateY(0) scale(1);opacity:1}
+.modal-close{position:absolute;top:16px;right:16px;width:36px;height:36px;border-radius:50%;background:var(--linen);border:none;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:background 0.2s,transform 0.25s;color:var(--walnut);font-weight:600}
+.modal-close:hover{background:var(--brass);color:#fff;transform:rotate(90deg)}
+.modal-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,4vw,1.9rem);color:var(--walnut);margin-bottom:6px;font-weight:300}
+.modal-subtitle{color:var(--muted);font-size:0.875rem;margin-bottom:28px;line-height:1.6}
+.contact-form textarea{width:100%;padding:14px 16px;border:2px solid var(--linen);border-radius:8px;font-size:1rem;color:var(--text);background:var(--cream);resize:vertical;min-height:100px;transition:border-color 0.2s;font-family:inherit;line-height:1.6}
+.contact-form textarea:focus{outline:none;border-color:var(--brass)}
+.contact-form textarea.valid{border-color:#4CAF50}
+.contact-form textarea.error{border-color:#e53935}
+
+/* Success state */
+.form-success{display:none;text-align:center;padding:24px 8px}
+.form-success.show{display:block}
+.success-circle{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--brass),#D4A843);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;font-size:2.2rem;opacity:0;animation:successPop 0.7s cubic-bezier(0.16,1,0.3,1) 0.1s forwards}
+@keyframes successPop{0%{transform:scale(0) rotate(-20deg);opacity:0}65%{transform:scale(1.18) rotate(6deg);opacity:1}100%{transform:scale(1) rotate(0);opacity:1}}
+.success-text h3{font-size:1.4rem;color:var(--walnut);margin-bottom:8px;opacity:0;animation:fadeInUp 0.5s ease 0.5s forwards}
+.success-text p{color:var(--muted);line-height:1.7;opacity:0;animation:fadeInUp 0.5s ease 0.65s forwards}
+.success-confetti{display:flex;justify-content:center;gap:8px;margin-top:20px}
+.success-confetti span{display:block;width:10px;height:10px;border-radius:50%;opacity:0}
+.success-confetti span:nth-child(1){background:var(--brass);animation:confettiBounce 0.6s ease 0.8s forwards}
+.success-confetti span:nth-child(2){background:var(--walnut);animation:confettiBounce 0.6s ease 0.9s forwards;border-radius:2px}
+.success-confetti span:nth-child(3){background:#D4A843;animation:confettiBounce 0.6s ease 0.85s forwards}
+.success-confetti span:nth-child(4){background:var(--brass-dark);animation:confettiBounce 0.6s ease 0.95s forwards;border-radius:3px}
+.success-confetti span:nth-child(5){background:var(--walnut);animation:confettiBounce 0.6s ease 1s forwards}
+@keyframes confettiBounce{0%{opacity:0;transform:translateY(-24px) rotate(0deg)}60%{opacity:1;transform:translateY(6px) rotate(160deg)}100%{opacity:1;transform:translateY(0) rotate(200deg)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+/* ══ WOW UPGRADES ══ */
+
+/* Scroll progress bar */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--brass),#D4A843,var(--brass-dark));background-size:200% 100%;z-index:9999;width:0%;transition:width 0.08s linear;animation:progressShimmer 3s linear infinite}
+@keyframes progressShimmer{0%{background-position:0% 0%}100%{background-position:200% 0%}}
+
+
+/* Hero title animated gradient */
+.hero-title{background:linear-gradient(125deg,var(--walnut) 0%,#6B4E3D 20%,var(--brass) 45%,#D4A843 60%,var(--walnut) 85%,var(--brass) 100%) !important;background-size:300% 100% !important;-webkit-background-clip:text !important;-webkit-text-fill-color:transparent !important;background-clip:text !important;color:transparent !important;animation:heroGrad 9s ease-in-out infinite !important}
+@keyframes heroGrad{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+
+/* Section title animated underline */
+.section-title{position:relative;display:inline-block}
+.section-title::after{content:'';position:absolute;bottom:-6px;left:0;width:0;height:2px;background:linear-gradient(90deg,var(--brass),transparent);border-radius:1px;transition:width 0.9s cubic-bezier(0.16,1,0.3,1) 0.25s}
+.section-title.visible::after{width:60%}
+
+/* Enhanced fade animations */
+.fade-up{opacity:0;transform:translateY(52px);transition:opacity 0.85s cubic-bezier(0.16,1,0.3,1),transform 0.85s cubic-bezier(0.16,1,0.3,1)}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+.fade-left{opacity:0;transform:translateX(-52px);transition:opacity 0.85s cubic-bezier(0.16,1,0.3,1),transform 0.85s cubic-bezier(0.16,1,0.3,1)}
+.fade-left.visible{opacity:1;transform:translateX(0)}
+.fade-right{opacity:0;transform:translateX(52px);transition:opacity 0.85s cubic-bezier(0.16,1,0.3,1),transform 0.85s cubic-bezier(0.16,1,0.3,1)}
+.fade-right.visible{opacity:1;transform:translateX(0)}
+
+/* Stagger delays applied via JS but defined here */
+[data-delay="1"]{transition-delay:80ms !important}
+[data-delay="2"]{transition-delay:160ms !important}
+[data-delay="3"]{transition-delay:240ms !important}
+[data-delay="4"]{transition-delay:320ms !important}
+[data-delay="5"]{transition-delay:400ms !important}
+[data-delay="6"]{transition-delay:480ms !important}
+
+/* Product card shimmer sweep */
+.product-card{position:relative;overflow:hidden}
+.product-card::before{content:'';position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,0.22) 50%,transparent 70%);transition:left 0.7s ease;z-index:2;pointer-events:none}
+.product-card:hover::before{left:140%}
+
+/* Card glow on hover via CSS var */
+.product-card::after{content:'';position:absolute;inset:0;border-radius:inherit;opacity:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(164,134,61,0.1) 0%,transparent 65%);transition:opacity 0.4s ease;pointer-events:none;z-index:0}
+.product-card:hover::after{opacity:1}
+
+/* Bento card glow */
+.bento-card::after{content:'';position:absolute;inset:0;border-radius:inherit;opacity:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(164,134,61,0.09) 0%,transparent 70%);transition:opacity 0.4s ease;pointer-events:none}
+.bento-card:hover::after{opacity:1}
+
+/* Pain card hover */
+.pain-card{transition:transform 0.38s cubic-bezier(0.25,0.46,0.45,0.94),box-shadow 0.38s ease,border-color 0.3s}
+.pain-card:hover{transform:translateY(-5px) scale(1.01);box-shadow:0 18px 44px rgba(58,46,43,0.13);border-left-color:var(--brass-dark)}
+
+/* Review card hover */
+.review-card{transition:transform 0.38s cubic-bezier(0.25,0.46,0.45,0.94),box-shadow 0.38s ease}
+.review-card:hover{transform:translateY(-5px);box-shadow:0 18px 48px rgba(58,46,43,0.13)}
+
+/* Step num pulse */
+.step-num{transition:transform 0.35s ease,box-shadow 0.35s ease}
+.step:hover .step-num{transform:scale(1.12);box-shadow:0 10px 28px rgba(164,134,61,0.45)}
+
+/* Cert card hover */
+.cert-card{transition:transform 0.3s ease,box-shadow 0.3s ease,border-color 0.3s}
+.cert-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--brass)}
+
+/* Contact icon hover */
+.contact-icon{transition:background 0.3s ease,transform 0.3s ease}
+.contact-item:hover .contact-icon{background:linear-gradient(135deg,var(--brass),var(--brass-dark));transform:scale(1.12)}
+
+/* Button ripple */
+.btn{position:relative;overflow:hidden}
+.ripple-wave{position:absolute;border-radius:50%;transform:scale(0);animation:rippleOut 0.65s linear forwards;background:rgba(255,255,255,0.28);pointer-events:none}
+@keyframes rippleOut{to{transform:scale(4.5);opacity:0}}
+
+/* Active nav link */
+.nav a.nav-active{opacity:1;color:var(--brass)}
+
+/* Hero form card slide-in from right */
+.hero-form-card{opacity:0;transform:translateX(40px);transition:opacity 0.9s cubic-bezier(0.16,1,0.3,1) 0.25s,transform 0.9s cubic-bezier(0.16,1,0.3,1) 0.25s}
+.hero-form-card.visible{opacity:1;transform:translateX(0)}
+
+/* Trust bar items stagger */
+.trust-bar .trust-item{opacity:0;transform:translateY(12px);transition:opacity 0.5s ease,transform 0.5s ease}
+.trust-bar.visible .trust-item:nth-child(1){opacity:1;transform:none;transition-delay:0.5s}
+.trust-bar.visible .trust-item:nth-child(2){opacity:1;transform:none;transition-delay:0.65s}
+.trust-bar.visible .trust-item:nth-child(3){opacity:1;transform:none;transition-delay:0.8s}
+.trust-bar.visible .trust-item:nth-child(4){opacity:1;transform:none;transition-delay:0.95s}
+.trust-bar.visible .trust-item:nth-child(5){opacity:1;transform:none;transition-delay:1.1s}
+
+/* Marquee pause on hover */
+.marquee-wrap:hover .marquee-track{animation-play-state:paused}
+
+/* Timer number flip */
+@keyframes numFlip{from{transform:translateY(-6px);opacity:0}to{transform:translateY(0);opacity:1}}
+.timer-flip{animation:numFlip 0.2s ease forwards}
+
+/* Promo section glow orbs */
+.promo{overflow:hidden}
+.promo::after{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(164,134,61,0.12) 0%,transparent 70%);bottom:-200px;right:-100px;pointer-events:none;animation:orbFloat 8s ease-in-out infinite}
+@keyframes orbFloat{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-30px) scale(1.05)}}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="curtain-panel" id="cp1"></div>
+  <div class="curtain-panel" id="cp2"></div>
+  <div class="curtain-panel" id="cp3"></div>
+  <div class="curtain-panel" id="cp4"></div>
+  <div class="curtain-panel" id="cp5"></div>
+</div>
+<div id="loader-logo" aria-hidden="true">ИнтерДвери</div>
+
+<!-- HEADER -->
+<header class="header" id="mainHeader">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="logo">Интер<span>Двери</span></a>
+      <nav class="nav" role="navigation">
+        <a href="#catalog">Каталог</a>
+        <a href="#benefits">О компании</a>
+        <a href="#how">Как мы работаем</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-contacts">
+        <a href="tel:+79991234567" class="header-phone">+7 (999) 123-45-67</a>
+        <a href="#hero-form" class="btn btn-primary" style="min-height:40px;padding:10px 20px;font-size:0.85rem">Заказать замер</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav" role="navigation">
+  <a href="#catalog" class="mobile-nav-link">Каталог</a>
+  <a href="#benefits" class="mobile-nav-link">О компании</a>
+  <a href="#how" class="mobile-nav-link">Как мы работаем</a>
+  <a href="#reviews" class="mobile-nav-link">Отзывы</a>
+  <a href="#contacts" class="mobile-nav-link">Контакты</a>
+  <a href="tel:+79991234567" class="btn btn-primary" style="width:100%;justify-content:center">+7 (999) 123-45-67</a>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-bg-img">
+    <div class="img-placeholder" style="height:100vh;font-size:1rem">🚪 Фото двери в интерьере</div>
+  </div>
+  <div class="hero-grain"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="fade-left">
+        <p class="section-label">Входные &amp; межкомнатные двери</p>
+        <h1 class="hero-title">Установим дверь<br>за&nbsp;1&nbsp;день&nbsp;—<br>фиксированная цена<br>в&nbsp;договоре</h1>
+        <p class="hero-subtitle">Более 800 моделей входных и межкомнатных дверей в наличии.<br>Бесплатный замер. Гарантия 5 лет письменно.</p>
+        <div class="trust-bar">
+          <div class="trust-item"><span class="trust-icon">🛡️</span>Гарантия 5 лет</div>
+          <div class="trust-item"><span class="trust-icon">📋</span>Работаем по договору</div>
+          <div class="trust-item"><span class="trust-icon">📐</span>Бесплатный замер</div>
+          <div class="trust-item"><span class="trust-icon">🏭</span>С 2008 года</div>
+          <div class="trust-item"><span class="trust-icon">👥</span>12 000+ клиентов</div>
+        </div>
+      </div>
+
+      <div class="hero-form-card fade-up" id="hero-form">
+        <p class="form-title">Получите бесплатный замер</p>
+        <form id="formHero" novalidate>
+          <div class="form-group">
+            <label for="heroName">Ваше имя</label>
+            <input id="heroName" type="text" name="name" placeholder="Алексей" autocomplete="given-name" required>
+          </div>
+          <div class="form-group">
+            <label for="heroPhone">Телефон</label>
+            <input id="heroPhone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%">Получить бесплатный замер</button>
+          <p class="form-microcopy">Перезвоним в течение 15 минут. Работаем по договору.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <span>· КАЧЕСТВО</span><span>· НАДЁЖНОСТЬ</span><span>· СТИЛЬ</span><span>· БЕЗОПАСНОСТЬ</span>
+    <span>· ГАРАНТИЯ 5 ЛЕТ</span><span>· РАБОТАЕМ ПО ДОГОВОРУ</span><span>· БЕСПЛАТНЫЙ ЗАМЕР</span>
+    <span>· 12 000+ КЛИЕНТОВ</span><span>· С 2008 ГОДА</span><span>· УСТАНОВКА ЗА 1 ДЕНЬ</span>
+    <span>· КАЧЕСТВО</span><span>· НАДЁЖНОСТЬ</span><span>· СТИЛЬ</span><span>· БЕЗОПАСНОСТЬ</span>
+    <span>· ГАРАНТИЯ 5 ЛЕТ</span><span>· РАБОТАЕМ ПО ДОГОВОРУ</span><span>· БЕСПЛАТНЫЙ ЗАМЕР</span>
+    <span>· 12 000+ КЛИЕНТОВ</span><span>· С 2008 ГОДА</span><span>· УСТАНОВКА ЗА 1 ДЕНЬ</span>
+  </div>
+</div>
+
+<!-- PAIN -->
+<section class="section" id="pain">
+  <div class="container">
+    <p class="section-label fade-up">Мы вас понимаем</p>
+    <h2 class="section-title fade-up">Знакомо?</h2>
+    <div class="pain-grid">
+      <article class="pain-card fade-up">
+        <div class="pain-card-icon">😤</div>
+        <p>«Купили дверь — через год перекосилась и начала скрипеть»</p>
+      </article>
+      <article class="pain-card fade-up">
+        <div class="pain-card-icon">💸</div>
+        <p>«Цена на сайте одна — в итоговом счёте на 30% больше»</p>
+      </article>
+      <article class="pain-card fade-up">
+        <div class="pain-card-icon">⏰</div>
+        <p>«Замерщик не приехал в назначенное время, пришлось брать выходной»</p>
+      </article>
+      <article class="pain-card fade-up">
+        <div class="pain-card-icon">🙁</div>
+        <p>«Менеджеры давят на быструю покупку, не дают времени подумать»</p>
+      </article>
+      <article class="pain-card fade-up">
+        <div class="pain-card-icon">🚫</div>
+        <p>«Нестандартный проём — везде отказывают или называют космические цены»</p>
+      </article>
+    </div>
+    <div class="pain-resolution fade-up">
+      <p>Именно поэтому мы работаем иначе.<br>Фиксированная цена. Письменный договор. Один менеджер от замера до установки.</p>
+      <a href="#hero-form" class="btn btn-outline-light">Хочу бесплатный замер →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CATALOG -->
+<section class="section section--linen" id="catalog">
+  <div class="container">
+    <p class="section-label fade-up">Ассортимент</p>
+    <h2 class="section-title fade-up">Наши двери</h2>
+    <p class="section-subtitle fade-up">800+ моделей в наличии — выбирайте и получайте через 3–5 дней</p>
+
+    <div class="tabs" role="tablist">
+      <button class="tab-btn active" role="tab" aria-selected="true" data-tab="entry">Входные двери</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="interior">Межкомнатные двери</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="lobby">Тамбурные двери</button>
+    </div>
+
+    <!-- ВХОДНЫЕ -->
+    <div class="tab-panel active" id="tab-entry">
+      <div class="catalog-grid">
+        <article class="product-card">
+          <div class="product-img">
+            <div class="img-placeholder">🚪 Термо S37 в интерьере</div>
+            <span class="product-badge">Хит продаж</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Термо S37</h3>
+            <p class="product-specs">Класс взломостойкости М3 · Металл 1.5 мм · Терморазрыв · Отделка МДФ</p>
+            <p class="product-price">от 38 900 ₽</p>
+            <div class="product-btns">
+              <a href="#hero-form" class="btn btn-outline" style="font-size:0.8rem;min-height:40px">Подробнее</a>
+              <a href="#hero-form" class="btn btn-primary" style="font-size:0.8rem;min-height:40px">Заказать замер</a>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img">
+            <div class="img-placeholder">🚪 Страж Ультра в интерьере</div>
+            <span class="product-badge">Выбор дизайнеров</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Страж Ультра</h3>
+            <p class="product-specs">Класс М4 · Металл 2 мм · Зеркало · Латунная фурнитура</p>
+            <p class="product-price">от 54 900 ₽</p>
+            <div class="product-btns">
+              <a href="#hero-form" class="btn btn-outline" style="font-size:0.8rem;min-height:40px">Подробнее</a>
+              <a href="#hero-form" class="btn btn-primary" style="font-size:0.8rem;min-height:40px">Заказать замер</a>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img">
+            <div class="img-placeholder">🚪 Форпост 100 в интерьере</div>
+            <span class="product-badge">В наличии</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Форпост 100</h3>
+            <p class="product-specs">Класс М3 · Порошковое покрытие · Три контура уплотнения</p>
+            <p class="product-price">от 29 900 ₽</p>
+            <div class="product-btns">
+              <a href="#hero-form" class="btn btn-outline" style="font-size:0.8rem;min-height:40px">Подробнее</a>
+              <a href="#hero-form" class="btn btn-primary" style="font-size:0.8rem;min-height:40px">Заказать замер</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- МЕЖКОМНАТНЫЕ -->
+    <div class="tab-panel" id="tab-interior">
+      <div class="catalog-grid">
+        <article class="product-card">
+          <div class="product-img">
+            <div class="img-placeholder">🚪 Аура Классик в интерьере</div>
+            <span class="product-badge">Новинка</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Аура Классик</h3>
+            <p class="product-specs">Шпон дуба · Стекло сатин · Петли скрытые · 12 оттенков</p>
+            <p class="product-price">от 24 900 ₽</p>
+            <div class="product-btns">
+              <a href="#hero-form" class="btn btn-outline" style="font-size:0.8rem;min-height:40px">Подробнее</a>
+              <a href="#hero-form" class="btn btn-primary" style="font-size:0.8rem;min-height:40px">Заказать замер</a>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img">
+            <div class="img-placeholder">🚪 Лофт Гранде в интерьере</div>
+            <span class="product-badge">Хит продаж</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Лофт Гранде</h3>
+            <p class="product-specs">МДФ экошпон · Стекло триплекс · Высота до 2400 мм</p>
+            <p class="product-price">от 18 900 ₽</p>
+            <div class="product-btns">
+              <a href="#hero-form" class="btn btn-outline" style="font-size:0.8rem;min-height:40px">Подробнее</a>
+              <a href="#hero-form" class="btn btn-primary" style="font-size:0.8rem;min-height:40px">Заказать замер</a>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img">
+            <div class="img-placeholder">🚪 Соло Белый в интерьере</div>
+            <span class="product-badge">В наличии</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Соло Белый</h3>
+            <p class="product-specs">ПВХ покрытие · Белая эмаль · Глухое полотно · 8 размеров</p>
+            <p class="product-price">от 12 900 ₽</p>
+            <div class="product-btns">
+              <a href="#hero-form" class="btn btn-outline" style="font-size:0.8rem;min-height:40px">Подробнее</a>
+              <a href="#hero-form" class="btn btn-primary" style="font-size:0.8rem;min-height:40px">Заказать замер</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ТАМБУРНЫЕ -->
+    <div class="tab-panel" id="tab-lobby">
+      <div class="catalog-grid">
+        <article class="product-card">
+          <div class="product-img">
+            <div class="img-placeholder">🚪 Тамбур Лайт в интерьере</div>
+            <span class="product-badge">В наличии</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Тамбур Лайт</h3>
+            <p class="product-specs">Металл · Отделка порошок · Под нестандартные проёмы</p>
+            <p class="product-price">от 22 900 ₽</p>
+            <div class="product-btns">
+              <a href="#hero-form" class="btn btn-outline" style="font-size:0.8rem;min-height:40px">Подробнее</a>
+              <a href="#hero-form" class="btn btn-primary" style="font-size:0.8rem;min-height:40px">Заказать замер</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="catalog-footer fade-up">
+      <a href="#hero-form" class="btn btn-primary">Смотреть весь каталог (200+ моделей) →</a>
+      <p>Не нашли подходящую? <a href="#hero-form" style="color:var(--brass);font-weight:600">Подберём под ваш интерьер и проём бесплатно →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section" id="benefits">
+  <div class="container">
+    <p class="section-label fade-up">Наши преимущества</p>
+    <h2 class="section-title fade-up">Почему выбирают нас</h2>
+
+    <div class="stats-row" id="statsBlock">
+      <div class="stat-item fade-up">
+        <div class="stat-num" data-target="15" data-suffix="+">0</div>
+        <div class="stat-label">лет на рынке</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-num" data-target="12000" data-suffix="+">0</div>
+        <div class="stat-label">установленных дверей</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-num" data-target="4.9" data-suffix="★">0</div>
+        <div class="stat-label">средний рейтинг</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-num" data-target="48" data-suffix=" ч">0</div>
+        <div class="stat-label">от замера до установки</div>
+      </div>
+    </div>
+
+    <div class="bento">
+      <div class="bento-card wide fade-up">
+        <div class="bento-icon">📋</div>
+        <h3>Фиксированная цена в договоре</h3>
+        <p>Стоимость прописывается до начала работ — никаких доплат и сюрпризов после подписания. Это наше главное правило и обязательство перед каждым клиентом.</p>
+      </div>
+      <div class="bento-card fade-up">
+        <div class="bento-icon">📐</div>
+        <h3>Бесплатный замер</h3>
+        <p>Мастер приедет в удобное время. Опоздание на 30+ минут — скидка 500 ₽ автоматически.</p>
+      </div>
+      <div class="bento-card fade-up">
+        <div class="bento-icon">🚚</div>
+        <h3>Установка за 1 день</h3>
+        <p>800+ моделей в наличии. Не нужно ждать недели — привезём и установим в кратчайшие сроки.</p>
+      </div>
+      <div class="bento-card fade-up">
+        <div class="bento-icon">🛡️</div>
+        <h3>Гарантия 5 лет письменно</h3>
+        <p>На полотно, коробку, петли и замки. Документ на руках — не просто слова менеджера.</p>
+      </div>
+      <div class="bento-card fade-up">
+        <div class="bento-icon">🏭</div>
+        <h3>Собственное производство</h3>
+        <p>Прямые цены без наценок посредников. Изготавливаем под любые размеры от 600 до 2200 мм.</p>
+      </div>
+      <div class="bento-card fade-up">
+        <div class="bento-icon">👤</div>
+        <h3>Личный менеджер</h3>
+        <p>Один человек ведёт вас от замера до подписания акта. Никаких переключений между отделами.</p>
+      </div>
+    </div>
+    <div class="bento-gost fade-up">
+      Работаем по ГОСТ 31173-2003 и ГОСТ 6629-88. Сертификаты соответствия предоставим по запросу.
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE 2 -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track" style="animation-direction:reverse">
+    <span>· СОБСТВЕННОЕ ПРОИЗВОДСТВО</span><span>· ГОСТ 31173-2003</span><span>· ЛИЧНЫЙ МЕНЕДЖЕР</span>
+    <span>· РАССРОЧКА 0%</span><span>· НЕСТАНДАРТНЫЕ ПРОЁМЫ</span><span>· ДОГОВОР НА РУКАХ</span>
+    <span>· БЕЗ СЮРПРИЗОВ</span><span>· ДЕМОНТАЖ В ПОДАРОК</span><span>· УБОРКА ПОСЛЕ РАБОТ</span>
+    <span>· СОБСТВЕННОЕ ПРОИЗВОДСТВО</span><span>· ГОСТ 31173-2003</span><span>· ЛИЧНЫЙ МЕНЕДЖЕР</span>
+    <span>· РАССРОЧКА 0%</span><span>· НЕСТАНДАРТНЫЕ ПРОЁМЫ</span><span>· ДОГОВОР НА РУКАХ</span>
+    <span>· БЕЗ СЮРПРИЗОВ</span><span>· ДЕМОНТАЖ В ПОДАРОК</span><span>· УБОРКА ПОСЛЕ РАБОТ</span>
+  </div>
+</div>
+
+<!-- HOW WE WORK -->
+<section class="section section--linen" id="how">
+  <div class="container">
+    <p class="section-label fade-up">Процесс работы</p>
+    <h2 class="section-title fade-up">Просто. Быстро. Без сюрпризов.</h2>
+    <div class="steps fade-up">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Заявка</h3>
+        <p>Оставьте заявку на сайте или звоните. Перезвоним за 15 минут.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Бесплатный замер</h3>
+        <p>Мастер приедет в течение 24 часов. Подберём модели под ваш проём и интерьер.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Доставка</h3>
+        <p>В наличии — доставим за 3–5 дней. Под заказ — от 14 рабочих дней.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h3>Установка</h3>
+        <p>Монтаж за 2–4 часа. Уберём за собой. Принимаете работу и подписываете акт.</p>
+      </div>
+    </div>
+    <p class="step-note fade-up">На каждом этапе — один менеджер. Никаких «переключений» между отделами.</p>
+    <div style="text-align:center" class="fade-up">
+      <a href="#hero-form" class="btn btn-primary">Записаться на замер бесплатно</a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" id="reviews">
+  <div class="container">
+    <p class="section-label fade-up">Отзывы клиентов</p>
+    <h2 class="section-title fade-up">12 000 семей уже выбрали ИнтерДвери</h2>
+
+    <div class="rating-block fade-up">
+      <div class="rating-stars">★★★★★</div>
+      <div class="rating-score">4.8</div>
+      <div>
+        <p style="font-weight:600;color:var(--walnut)">/ 5.0</p>
+        <p>На основе 847 отзывов</p>
+        <a href="#" class="rating-link">Читать все отзывы на Яндексе →</a>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <article class="review-card fade-up">
+        <div class="review-header">
+          <div class="review-avatar">М</div>
+          <div class="review-meta">
+            <h4>Марина К.</h4>
+            <p>Москва, Коньково · 14 марта 2026</p>
+          </div>
+        </div>
+        <p class="review-stars">★★★★★</p>
+        <p class="review-text">«Делали ремонт в трёшке, один проём нестандартный — 2.1 м. Нигде не брались. ИнтерДвери сделали под размер за 14 дней, установили за 3 часа, всё идеально. Рекомендую.»</p>
+        <p class="review-source">★ Яндекс.Карты</p>
+      </article>
+      <article class="review-card fade-up">
+        <div class="review-header">
+          <div class="review-avatar">А</div>
+          <div class="review-meta">
+            <h4>Андрей В.</h4>
+            <p>Москва, Митино · 2 апреля 2026</p>
+          </div>
+        </div>
+        <p class="review-stars">★★★★★</p>
+        <p class="review-text">«Менял входную дверь. Приятно удивлён — цена в договоре совпала с финальным счётом до копейки. Мастер приехал вовремя, установил быстро, убрал за собой. Пять из пяти.»</p>
+        <p class="review-source">★ Яндекс.Карты</p>
+      </article>
+      <article class="review-card fade-up">
+        <div class="review-header">
+          <div class="review-avatar">О</div>
+          <div class="review-meta">
+            <h4>Ольга С.</h4>
+            <p>Подмосковье · 18 февраля 2026</p>
+          </div>
+        </div>
+        <p class="review-stars">★★★★★</p>
+        <p class="review-text">«Купили 7 межкомнатных дверей для загородного дома. Менеджер Алексей вёл от замера до подписания акта — ни разу не перекидывали. Качество дверей отличное, стоят уже полгода.»</p>
+        <p class="review-source">★ 2ГИС</p>
+      </article>
+    </div>
+
+    <div class="certs fade-up">
+      <div class="cert-card">
+        <div class="cert-icon">📜</div>
+        <div>
+          <h4>ГОСТ 31173-2003</h4>
+          <p>Стальные входные двери</p>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">📜</div>
+        <div>
+          <h4>ГОСТ 6629-88</h4>
+          <p>Деревянные межкомнатные двери</p>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🔥</div>
+        <div>
+          <h4>Пожарный сертификат EI 30</h4>
+          <p>Противопожарные двери</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO -->
+<section class="promo" id="promo">
+  <div class="container">
+    <div class="promo-inner">
+      <div class="fade-left">
+        <p class="section-label" style="color:var(--brass)">Акция мая</p>
+        <h2>Бесплатная установка при заказе в мае</h2>
+        <p class="promo-sub">Для первых 20 заявок месяца — монтаж входит в стоимость двери. Сэкономьте от 3 500 ₽.</p>
+        <div class="timer" id="promoTimer">
+          <div class="timer-block">
+            <div class="timer-num" id="timerDays">--</div>
+            <div class="timer-label">дней</div>
+          </div>
+          <div class="timer-sep">:</div>
+          <div class="timer-block">
+            <div class="timer-num" id="timerHours">--</div>
+            <div class="timer-label">часов</div>
+          </div>
+          <div class="timer-sep">:</div>
+          <div class="timer-block">
+            <div class="timer-num" id="timerMins">--</div>
+            <div class="timer-label">минут</div>
+          </div>
+          <div class="timer-sep">:</div>
+          <div class="timer-block">
+            <div class="timer-num" id="timerSecs">--</div>
+            <div class="timer-label">секунд</div>
+          </div>
+        </div>
+      </div>
+      <div class="promo-form fade-up">
+        <p style="color:#F5F0E8;font-weight:600;margin-bottom:20px">Зафиксировать скидку</p>
+        <form id="formPromo" novalidate>
+          <div class="form-group">
+            <label for="promoName">Ваше имя</label>
+            <input id="promoName" type="text" name="name" placeholder="Алексей" required>
+          </div>
+          <div class="form-group">
+            <label for="promoPhone">Телефон</label>
+            <input id="promoPhone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%">Зафиксировать скидку</button>
+          <p class="form-microcopy">Перезвоним в течение 15 минут и зафиксируем условия для вас.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--linen" id="faq">
+  <div class="container">
+    <p class="section-label fade-up" style="text-align:center">Ответы на вопросы</p>
+    <h2 class="section-title fade-up" style="text-align:center;margin-bottom:48px">Часто спрашивают</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Изменится ли цена после замера?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region"><p>Нет. Стоимость фиксируется в договоре до начала работ. Никаких доплат после подписания — это наше главное правило.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Что входит в установку «под ключ»?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region"><p>Демонтаж старой двери, монтаж новой, установка замков и ручек, отделка откосов, регулировка, уборка после работ. Всё включено в озвученную стоимость.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Есть ли гарантия?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region"><p>Да. 5 лет на дверное полотно, коробку и петли. 2 года на фурнитуру. Гарантия письменная — в договоре.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Сколько ждать дверь?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region"><p>Двери из наличия (800+ моделей) — доставка 3–5 рабочих дней. Под заказ (нестандартный размер, спецотделка) — от 14 рабочих дней.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Делаете ли нестандартные проёмы?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region"><p>Да. Изготавливаем под любые размеры — от 600 мм до 2200 мм по ширине. Замерщик оценит проём и предложит решение.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Замер платный?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region"><p>Нет. Выезд замерщика бесплатен — в любом случае, независимо от того, купите ли вы дверь у нас.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Можно купить дверь без установки?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region"><p>Да. Продаём двери отдельно — с доставкой или самовывозом из шоурума.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Есть ли рассрочка?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region"><p>Да, рассрочка 0% через банк-партнёр. Срок — до 12 месяцев. Без переплат. Уточняйте у менеджера.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          В какие районы выезжаете?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region"><p>Работаем по Москве и Московской области. Выезд в другие регионы — уточняйте по телефону, часто возможен.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Работаете ли вы с юрлицами? Нужна счёт-фактура.
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region"><p>Да. Работаем с ИП и ООО. Предоставляем полный пакет документов: договор, акт, счёт-фактура, накладная. Для объёмных заказов — персональный менеджер и скидки.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA + CONTACTS -->
+<section class="section" id="contacts">
+  <div class="container">
+    <p class="section-label fade-up" style="text-align:center">Получить расчёт</p>
+    <h2 class="section-title fade-up" style="text-align:center">Узнайте точную стоимость дверей для вашей квартиры</h2>
+    <p class="section-subtitle fade-up" style="text-align:center;margin:0 auto 48px">Бесплатный расчёт — за 15 минут после вашей заявки</p>
+
+    <div class="final-cta-grid">
+      <div class="multistep-form fade-up">
+        <div class="step-indicator">
+          <div class="step-dot active" id="sdot1"></div>
+          <div class="step-dot" id="sdot2"></div>
+        </div>
+
+        <div class="ms-step active" id="ms1">
+          <p style="font-weight:600;color:var(--walnut);margin-bottom:16px">Что вас интересует?</p>
+          <div class="door-options">
+            <div class="door-option" data-val="entry">
+              <div class="door-option-icon">🚪</div>
+              Входная дверь
+            </div>
+            <div class="door-option" data-val="interior">
+              <div class="door-option-icon">🏠</div>
+              Межкомнатные
+            </div>
+            <div class="door-option" data-val="both">
+              <div class="door-option-icon">✨</div>
+              Оба варианта
+            </div>
+          </div>
+        </div>
+
+        <div class="ms-step" id="ms2">
+          <form id="formFinal" novalidate>
+            <p style="font-weight:600;color:var(--walnut);margin-bottom:16px">Оставьте контакт — перезвоним за 15 минут</p>
+            <div class="form-group">
+              <label for="finalName">Ваше имя</label>
+              <input id="finalName" type="text" name="name" placeholder="Алексей" required>
+            </div>
+            <div class="form-group">
+              <label for="finalPhone">Телефон</label>
+              <input id="finalPhone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Получить расчёт бесплатно</button>
+            <p class="form-microcopy">Не передаём данные третьим лицам. Перезвоним за 15 минут.</p>
+          </form>
+        </div>
+
+        <div class="success-msg" id="successMsg">
+          <div style="font-size:2.5rem;margin-bottom:12px">✅</div>
+          <h3 style="margin-bottom:8px">Спасибо! Заявка принята.</h3>
+          <p style="color:var(--muted);margin-bottom:20px">Алексей перезвонит вам в течение 15 минут.</p>
+          <div class="manager-block">
+            <div class="manager-avatar">👨‍💼</div>
+            <div class="manager-info">
+              <h4>Алексей — ваш менеджер</h4>
+              <p>Пока ждёте — <a href="#catalog" style="color:var(--brass)">посмотрите каталог →</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts-block fade-up">
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-info">
+            <span>Телефон (с 9:00 до 21:00)</span>
+            <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div class="contact-info">
+            <span>WhatsApp (ответим за 5 минут)</span>
+            <a href="https://wa.me/79991234567">Написать в WhatsApp</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✈️</div>
+          <div class="contact-info">
+            <span>Telegram</span>
+            <a href="https://t.me/interdveri">@interdveri</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-info">
+            <span>Email</span>
+            <a href="mailto:info@interdveri.ru">info@interdveri.ru</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-info">
+            <span>Шоурум</span>
+            <strong>Москва, ул. Примерная, 42</strong>
+          </div>
+        </div>
+        <div class="map-placeholder" role="img" aria-label="Карта шоурума">
+          🗺️ Карта Яндекс (Яндекс.Карты API)
+        </div>
+        <div class="hours">
+          <span>Пн–Сб: 9:00–20:00</span>
+          <span>Вс: 10:00–18:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">ИнтерДвери</div>
+        <div class="footer-legal">
+          ООО «ИнтерДвери»<br>
+          ИНН: 7712345678 · ОГРН: 1187746123456<br>
+          Москва, ул. Примерная, д. 42<br>
+          © 2008–2026 ИнтерДвери. Все права защищены.
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Навигация</h4>
+        <a href="#catalog">Каталог</a>
+        <a href="#benefits">О компании</a>
+        <a href="#how">Как мы работаем</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+      <div class="footer-nav">
+        <h4>Документы</h4>
+        <a href="#contacts" class="footer-placeholder">Политика конфиденциальности</a>
+        <a href="#contacts" class="footer-placeholder">Договор-оферта</a>
+        <a href="#contacts" class="footer-placeholder">Условия рассрочки</a>
+        <a href="#contacts" class="footer-placeholder">Гарантийный талон</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2008–2026 ИнтерДвери</span>
+      <span>Лицензия № 12345 · Все материалы защищены</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY BAR -->
+<div class="mobile-bar" role="navigation" aria-label="Быстрая связь">
+  <a href="tel:+79991234567" class="mobile-bar-call">📞 Позвонить</a>
+  <a href="https://wa.me/79991234567" class="mobile-bar-wa">💬 WhatsApp</a>
+</div>
+
+<!-- BACK TO TOP -->
+<button id="back-to-top" aria-label="Наверх на страницу">&#8679;</button>
+
+<!-- CONTACT FLOAT BUTTON -->
+<button id="openContactModal" aria-label="Написать нам">✉ Написать нам</button>
+
+<!-- CONTACT MODAL -->
+<div class="modal-overlay" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <button class="modal-close" id="closeModal" aria-label="Закрыть">✕</button>
+    <div id="contactFormWrap">
+      <h2 class="modal-title" id="modalTitle">Напишите нам</h2>
+      <p class="modal-subtitle">Ответим в течение 30 минут в рабочее время.<br>Или позвоните: <a href="tel:+79991234567" style="color:var(--brass);font-weight:600">+7 (999) 123-45-67</a></p>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="cName">Ваше имя</label>
+          <input id="cName" type="text" name="name" placeholder="Алексей" autocomplete="given-name" required>
+        </div>
+        <div class="form-group">
+          <label for="cEmail">Email</label>
+          <input id="cEmail" type="email" name="email" placeholder="alex@mail.ru" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label for="cMsg">Сообщение</label>
+          <textarea id="cMsg" name="message" placeholder="Интересует входная дверь для квартиры, нестандартный проём..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%">Отправить сообщение</button>
+        <p class="form-microcopy">Не передаём данные третьим лицам.</p>
+      </form>
+    </div>
+    <div class="form-success" id="contactSuccess">
+      <div class="success-circle">✓</div>
+      <div class="success-text">
+        <h3>Сообщение отправлено!</h3>
+        <p>Мы свяжемся с вами в течение 30 минут.<br>Спасибо за обращение.</p>
+      </div>
+      <div class="success-confetti">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── LOADER ──
+(function(){
+  const logo = document.getElementById('loader-logo');
+  const panels = document.querySelectorAll('.curtain-panel');
+  const loader = document.getElementById('loader');
+
+  if (sessionStorage.getItem('id_visited')) {
+    loader.style.display = 'none';
+    logo.style.display = 'none';
+    return;
+  }
+  sessionStorage.setItem('id_visited', '1');
+
+  setTimeout(() => { logo.classList.add('show'); }, 300);
+  setTimeout(() => { logo.classList.remove('show'); logo.classList.add('hide'); }, 1100);
+  setTimeout(() => {
+    panels.forEach((p, i) => {
+      setTimeout(() => p.classList.add('hide'), i * 80);
+    });
+  }, 1300);
+  setTimeout(() => { loader.style.display = 'none'; }, 2600);
+})();
+
+// ── HEADER SCROLL ──
+const header = document.getElementById('mainHeader');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 80);
+}, { passive: true });
+
+// ── BURGER MENU ──
+const burger = document.getElementById('burger');
+const mobileNav = document.getElementById('mobileNav');
+burger.addEventListener('click', () => {
+  const open = mobileNav.classList.toggle('open');
+  burger.classList.toggle('open', open);
+  burger.setAttribute('aria-expanded', open);
+});
+mobileNav.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+    burger.classList.remove('open');
+    burger.setAttribute('aria-expanded', false);
+  });
+});
+
+// ── TABS ──
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
+    });
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// ── FAQ ACCORDION ──
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const answer = item.querySelector('.faq-answer');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-answer').classList.remove('open');
+      i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      answer.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
+// ── SCROLL ANIMATIONS ──
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.fade-up, .fade-left').forEach(el => observer.observe(el));
+
+// ── COUNTERS ──
+let countersRan = false;
+const statsObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting && !countersRan) {
+    countersRan = true;
+    document.querySelectorAll('[data-target]').forEach(el => {
+      const target = parseFloat(el.dataset.target);
+      const suffix = el.dataset.suffix || '';
+      const isFloat = target % 1 !== 0;
+      const duration = 2000;
+      const start = performance.now();
+      function update(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        const val = isFloat
+          ? (target * ease).toFixed(1)
+          : Math.round(target * ease).toLocaleString('ru');
+        el.textContent = val + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
+    });
+  }
+}, { threshold: 0.5 });
+const statsBlock = document.getElementById('statsBlock');
+if (statsBlock) statsObserver.observe(statsBlock);
+
+// ── COUNTDOWN TIMER ──
+(function(){
+  const end = new Date('2026-05-31T23:59:59');
+  function update() {
+    const diff = end - new Date();
+    if (diff <= 0) {
+      document.getElementById('promoTimer').style.display = 'none';
+      return;
+    }
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff % 86400000) / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    document.getElementById('timerDays').textContent  = String(d).padStart(2,'0');
+    document.getElementById('timerHours').textContent = String(h).padStart(2,'0');
+    document.getElementById('timerMins').textContent  = String(m).padStart(2,'0');
+    document.getElementById('timerSecs').textContent  = String(s).padStart(2,'0');
+  }
+  update();
+  setInterval(update, 1000);
+})();
+
+// ── PHONE MASK ──
+function applyPhoneMask(input) {
+  input.addEventListener('input', function(e) {
+    let v = this.value.replace(/\D/g, '');
+    if (v.startsWith('8')) v = '7' + v.slice(1);
+    if (!v.startsWith('7') && v.length > 0) v = '7' + v;
+    let out = '';
+    if (v.length > 0)  out = '+7';
+    if (v.length > 1)  out += ' (' + v.slice(1,4);
+    if (v.length >= 4) out += ') ' + v.slice(4,7);
+    if (v.length >= 7) out += '-' + v.slice(7,9);
+    if (v.length >= 9) out += '-' + v.slice(9,11);
+    this.value = out;
+  });
+}
+document.querySelectorAll('input[type=tel]').forEach(applyPhoneMask);
+
+// ── FORM VALIDATION ──
+function validateForm(form) {
+  let valid = true;
+  form.querySelectorAll('input[required]').forEach(input => {
+    const ok = input.value.trim().length > 0 &&
+      (input.type !== 'tel' || input.value.replace(/\D/g,'').length >= 11);
+    input.classList.toggle('valid', ok);
+    input.classList.toggle('error', !ok);
+    if (!ok) valid = false;
+  });
+  return valid;
+}
+
+// ── HERO FORM ──
+document.getElementById('formHero').addEventListener('submit', function(e) {
+  e.preventDefault();
+  if (validateForm(this)) {
+    this.innerHTML = '<p style="text-align:center;color:var(--walnut);padding:20px">✅ Заявка принята! Перезвоним через 15 минут.</p>';
+  }
+});
+
+// ── PROMO FORM ──
+document.getElementById('formPromo').addEventListener('submit', function(e) {
+  e.preventDefault();
+  if (validateForm(this)) {
+    this.innerHTML = '<p style="text-align:center;color:#F5F0E8;padding:20px">✅ Скидка зафиксирована! Перезвоним через 15 минут.</p>';
+  }
+});
+
+// ── MULTI-STEP FORM ──
+let selectedDoor = null;
+document.querySelectorAll('.door-option').forEach(opt => {
+  opt.addEventListener('click', () => {
+    document.querySelectorAll('.door-option').forEach(o => o.classList.remove('selected'));
+    opt.classList.add('selected');
+    selectedDoor = opt.dataset.val;
+    setTimeout(() => {
+      document.getElementById('ms1').classList.remove('active');
+      document.getElementById('ms2').classList.add('active');
+      document.getElementById('sdot1').classList.remove('active');
+      document.getElementById('sdot2').classList.add('active');
+    }, 300);
+  });
+});
+
+document.getElementById('formFinal').addEventListener('submit', function(e) {
+  e.preventDefault();
+  if (validateForm(this)) {
+    document.querySelector('.step-indicator').style.display = 'none';
+    document.getElementById('ms2').classList.remove('active');
+    const name = document.getElementById('finalName').value.split(' ')[0];
+    document.getElementById('successMsg').classList.add('show');
+    document.querySelector('.multistep-form h3').textContent = 'Спасибо, ' + name + '!';
+  }
+});
+
+// ── MAGNETIC BUTTONS (desktop only) ──
+if (!('ontouchstart' in window)) {
+  document.querySelectorAll('.btn-primary').forEach(btn => {
+    btn.addEventListener('mousemove', function(e) {
+      const r = this.getBoundingClientRect();
+      const x = (e.clientX - r.left - r.width / 2) * 0.2;
+      const y = (e.clientY - r.top - r.height / 2) * 0.2;
+      this.style.transform = `translate(${x}px,${y}px)`;
+    });
+    btn.addEventListener('mouseleave', function() {
+      this.style.transform = '';
+    });
+  });
+}
+
+// ══ WOW UPGRADES ══
+
+// ── SCROLL PROGRESS BAR ──
+const progressBar = document.createElement('div');
+progressBar.id = 'scroll-progress';
+document.body.appendChild(progressBar);
+window.addEventListener('scroll', () => {
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  progressBar.style.width = (window.scrollY / max * 100) + '%';
+}, { passive: true });
+
+
+// ── PARALLAX HERO ──
+const heroBgEl = document.querySelector('.hero-bg');
+const heroBgImgEl = document.querySelector('.hero-bg-img');
+const heroGrainEl = document.querySelector('.hero-grain');
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  if (y > window.innerHeight) return;
+  if (heroBgEl)    heroBgEl.style.transform    = `translateY(${y * 0.25}px)`;
+  if (heroBgImgEl) heroBgImgEl.style.transform = `translateY(${y * 0.15}px)`;
+  if (heroGrainEl) heroGrainEl.style.transform = `translateY(${y * 0.05}px)`;
+}, { passive: true });
+
+// ── SMOOTH SCROLL WITH HEADER OFFSET ──
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (!id || id.length < 2) return;
+    if (id === '#') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    const target = document.querySelector(id);
+    if (!target) return;
+    e.preventDefault();
+    const top = target.getBoundingClientRect().top + window.scrollY - 88;
+    window.scrollTo({ top, behavior: 'smooth' });
+  });
+});
+
+// ── ACTIVE NAV HIGHLIGHT ──
+const navSections = document.querySelectorAll('main section[id]');
+const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+const syncNav = () => {
+  let current = '';
+  navSections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 160) current = s.id;
+  });
+  navLinks.forEach(a => a.classList.toggle('nav-active', a.getAttribute('href') === '#' + current));
+};
+window.addEventListener('scroll', syncNav, { passive: true });
+syncNav();
+
+// ── BUTTON RIPPLE ──
+document.querySelectorAll('.btn').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    const r = this.getBoundingClientRect();
+    const size = Math.max(r.width, r.height) * 2;
+    const x = e.clientX - r.left - size / 2;
+    const y = e.clientY - r.top - size / 2;
+    const wave = document.createElement('span');
+    wave.className = 'ripple-wave';
+    wave.style.cssText = `width:${size}px;height:${size}px;left:${x}px;top:${y}px`;
+    this.appendChild(wave);
+    setTimeout(() => wave.remove(), 750);
+  });
+});
+
+// ── CARD GLOW (mouse position via CSS vars) ──
+document.querySelectorAll('.product-card, .bento-card').forEach(card => {
+  card.addEventListener('mousemove', function(e) {
+    const r = this.getBoundingClientRect();
+    const x = ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%';
+    const y = ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%';
+    this.style.setProperty('--mx', x);
+    this.style.setProperty('--my', y);
+  });
+});
+
+// ── 3D TILT ON PRODUCT CARDS (desktop) ──
+if (!('ontouchstart' in window)) {
+  document.querySelectorAll('.product-card').forEach(card => {
+    card.addEventListener('mousemove', function(e) {
+      const r = this.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      this.style.transform = `perspective(700px) rotateY(${px * 12}deg) rotateX(${-py * 10}deg) translateY(-6px) scale(1.015)`;
+    });
+    card.addEventListener('mouseleave', function() {
+      this.style.transform = '';
+      this.style.transition = 'transform 0.6s cubic-bezier(0.16,1,0.3,1),box-shadow 0.35s ease';
+      setTimeout(() => { this.style.transition = ''; }, 600);
+    });
+  });
+}
+
+// ── STAGGER DELAYS ON GRID CHILDREN ──
+document.querySelectorAll('.pain-grid, .catalog-grid, .bento, .reviews-grid, .stats-row').forEach(grid => {
+  Array.from(grid.children).forEach((child, i) => {
+    child.setAttribute('data-delay', Math.min(i + 1, 6));
+  });
+});
+
+// ── TRUST BAR STAGGER ──
+const trustBar = document.querySelector('.trust-bar');
+if (trustBar) observer.observe(trustBar);
+
+// ── TIMER FLIP ANIMATION ──
+let prevSec = -1;
+const origTimerUpdate = setInterval; // already running, patch the display
+const patchFlip = (id) => {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const orig = el.textContent;
+  const newObs = new MutationObserver(() => {
+    el.classList.remove('timer-flip');
+    void el.offsetWidth;
+    el.classList.add('timer-flip');
+  });
+  newObs.observe(el, { childList: true });
+};
+['timerDays','timerHours','timerMins','timerSecs'].forEach(patchFlip);
+
+// ── SECTION TITLE OBSERVER (underline) ──
+document.querySelectorAll('.section-title').forEach(el => observer.observe(el));
+
+// ── HERO FORM CARD separate observer ──
+const heroFormCard = document.querySelector('.hero-form-card');
+if (heroFormCard) {
+  heroFormCard.classList.remove('fade-up');
+  const heroObs = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) { heroFormCard.classList.add('visible'); heroObs.disconnect(); }
+  }, { threshold: 0.1 });
+  heroObs.observe(heroFormCard);
+}
+
+// ── PAIN RESOLUTION GRADIENT SHIFT ──
+const painRes = document.querySelector('.pain-resolution');
+if (painRes) {
+  painRes.style.background = `linear-gradient(135deg, var(--walnut) 0%, #2C1F1C 60%, #4A3230 100%)`;
+}
+
+// ── BACK TO TOP ──
+const backToTopBtn = document.getElementById('back-to-top');
+const contactFloatBtn = document.getElementById('openContactModal');
+window.addEventListener('scroll', () => {
+  const show = window.scrollY > 400;
+  backToTopBtn.classList.toggle('show', show);
+  contactFloatBtn.classList.toggle('show', show);
+}, { passive: true });
+backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+// ── CONTACT MODAL ──
+const contactModal = document.getElementById('contactModal');
+const closeModalBtn = document.getElementById('closeModal');
+
+function openModal() {
+  contactModal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModalFn() {
+  contactModal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+contactFloatBtn.addEventListener('click', openModal);
+closeModalBtn.addEventListener('click', closeModalFn);
+contactModal.addEventListener('click', e => { if (e.target === contactModal) closeModalFn(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModalFn(); });
+
+// ── CONTACT FORM SUBMIT ──
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  let valid = true;
+  this.querySelectorAll('[required]').forEach(field => {
+    const isEmpty = field.value.trim().length < 2;
+    const isEmailBad = field.type === 'email' && !/\S+@\S+\.\S+/.test(field.value);
+    const ok = !isEmpty && !isEmailBad;
+    field.classList.toggle('valid', ok);
+    field.classList.toggle('error', !ok);
+    if (!ok) valid = false;
+  });
+  if (!valid) return;
+
+  const wrap = document.getElementById('contactFormWrap');
+  const success = document.getElementById('contactSuccess');
+  wrap.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+  wrap.style.opacity = '0';
+  wrap.style.transform = 'translateY(-10px)';
+  setTimeout(() => {
+    wrap.style.display = 'none';
+    success.classList.add('show');
+  }, 320);
+});
+</script>
+</body>
+</html>
